@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F5F6"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RadioButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/checked_home"
+            android:gravity="center_horizontal"
+            android:text="@string/home"
+            android:textColor="@color/nav_checked_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/discovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/checked_discovery"
+            android:gravity="center_horizontal"
+            android:text="@string/discovery"
+            android:textColor="@color/nav_checked_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/audit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/checked_audit"
+            android:gravity="center_horizontal"
+            android:text="@string/audit"
+            android:textColor="@color/nav_checked_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/checked_msg"
+            android:gravity="center_horizontal"
+            android:text="@string/msg"
+            android:textColor="@color/nav_checked_color"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>
